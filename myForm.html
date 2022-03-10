@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icon-->
+    <link rel="shortcut icon" href="./animal_images/panda3.png">
+    <link rel="bookmark" href="./animal_images/panda3.png">
+    <link rel="stylesheet" href="./formstyle.css"/>
+    <title>熊貓問卷調查</title>
+</head>
+<body>
+    <h3>&#9720;熊貓問卷調查&#9727;</h3>
+    <!--熊貓問卷調查-->
+    <form action="" method="get">
+        <label for="myname">姓名：</label>
+        <input 
+        id="myname" 
+        type="text" 
+        name="InputName" 
+        placeholder="請輸入真實姓名">
+        <br>
+        <br>
+        <label for="gender">性別：</label>
+        <select name="gender" id="gender" required>
+            <option value=""></option>
+            <option value="male">男性</option>
+            <option value="female">女性</option>
+            <option value="others">其他</option>
+        </select>
+        <!--這是沒用到ㄉradio例子-->
+        <!-- <label for="male">男性</label>
+        <input type="radio" name="gender" id="male" value="male" checked required>
+        <label for="female">女性</label>
+        <input type="radio" name="gender" id="female" value="female" >
+        <label for="others">其他</label>
+        <input type="radio" name="gender" id="others" value="female" > -->
+        <br/>
+        <br/>
+        <label for="tele">電話：</label>
+        <input id="tele" type="text" name="telephone" required>
+        <br/>
+        <br/>
+        <label for="email">信箱：</label>
+        <input id="email" type="email" name="email" required>
+        <br>
+        <br>
+        <label for="age">年齡：</label>
+        <input 
+        type="number" 
+        name="age" 
+        id="age" 
+        min="0" 
+        max="150" 
+        value="18"
+        required>
+        <br>
+        <br>
+        <label for="area">地區：</label>
+        <input list="arealist" type="text" id="area" name="area" />
+        <datalist id="arealist" >
+            <option value="基隆市">基隆市</option>
+            <option value="台北市">台北市</option>
+            <option value="新北市">新北市</option>
+        </datalist>
+        <br>
+        <br>
+        <input 
+        type="checkbox" 
+        name="news" 
+        value="newspaper" 
+        checked>
+        <label for="checkbox">是否訂閱貓貓電子報</label>
+        <br/>
+        <hr>
+        <!--這是textarea-->
+        <label for="suggestion">給我們回饋吧：</label>
+        <br>
+        <br>
+        <textarea 
+        name="suggestion" 
+        id="suggestion" 
+        cols="30" 
+        rows="10" 
+        placeholder="謝謝尼！"></textarea>
+        <br>
+        <br>
+        <label for="password">密碼： </label>
+        <input 
+        type="password" 
+        name="password" 
+        id="password" 
+        minlength="8" 
+        maxlength="12">
+        <br>
+        <br>
+        <button type="submit">提交表單</button>
+    </form>
+</body>
+</html>

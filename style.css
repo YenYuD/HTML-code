@@ -1,0 +1,260 @@
+/*這些是h1,h2,h3和p顏色設定*/
+/* h1 {
+  color: #61adb5;
+}
+h2 {
+  color: #61adb5;
+}
+h3 {
+  color: #61adb5;
+}
+p {
+  color: rgb(11, 32, 59);
+} */
+
+/*universal selector*/
+/* * {
+  color: darkslategrey;
+} */
+
+/*element selector*/
+/* h1 {
+  color: cadetblue;
+}
+
+/*id selector*/
+/* #redText {
+  color: brown;
+} */
+
+/*class selector*/
+/* .blueText {
+  color: rgb(4, 4, 53);
+} */
+
+/* .largeText {
+  font-size: 2rem;
+} */
+
+/* h1.blueText {
+  color: coral;
+} */
+
+/* h1,
+h2,
+h3,
+p {
+  color: darkslategray;
+} */
+/* div.link1 a {
+  color: brown;
+}
+div.link2 a {
+  color: rgb(95, 59, 45);
+} */
+
+body {
+  background-image: url("./evie-s-eobySVu7nN4-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/*attribute selector*/
+input[type="text"] {
+  color: #1b555f;
+}
+
+#email,
+#age,
+#area,
+#gender,
+#suggestion {
+  color: #1b555f;
+}
+
+input[type="text"]:focus {
+  color: rgb(130, 189, 189);
+}
+
+tr:nth-child(2n + 1) {
+  color: chocolate;
+}
+
+*::selection {
+  color: rgb(39, 36, 85);
+  background-color: rgb(202, 173, 173);
+}
+
+p {
+  font-size: 15px;
+  letter-spacing: 3px;
+  line-height: 2.5em;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 570;
+  text-indent: 32px;
+  color: azure;
+  padding: 1rem 8rem;
+}
+
+a::before {
+  content: "*";
+}
+
+h1,
+h2,
+h3,
+li,
+a,
+tr {
+  letter-spacing: 4px;
+  line-height: 2rem;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: beige;
+  padding: 0rem 8rem;
+}
+
+a,
+tr {
+  color: azure;
+  text-decoration: none;
+}
+
+img {
+  opacity: 0.7;
+  padding: 0rem 8rem;
+}
+td,
+tr,
+th {
+  border: 1px solid azure;
+}
+
+ul {
+  color: azure;
+  padding: 0rem 10rem;
+}
+h1.heading {
+  margin-top: 4rem;
+}
+
+.link1 {
+  background-color: #1b555f;
+  width: 12vw;
+  color: azure;
+  text-decoration: none;
+  margin: 0rem 8rem;
+}
+
+.link2 {
+  background-color: #1b555f;
+  width: 10vw;
+  height: 2rem;
+  color: azure;
+  text-decoration: none;
+  margin: 0rem 8rem;
+}
+
+.link1:hover {
+  background-color: cadetblue;
+}
+
+.link2:hover {
+  background-color: cadetblue;
+}
+
+table {
+  margin: 0rem 8rem;
+  width: 500px;
+}
+
+.pandapic {
+  width: 500px;
+  height: 400px;
+}
+.headdiv {
+  width: 100%;
+  height: 60px;
+  background-color: #2d545c;
+  opacity: 0.7;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+h3.title {
+  padding: 0px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  color: rgb(250, 250, 250);
+  opacity: 0.9;
+  /* cursor: pointer; */
+  transition: all 1s ease-in-out;
+}
+
+h3.title span {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: square;
+}
+
+table,
+th,
+td {
+  border-bottom: 1px solid black;
+  border: solid #ffffff;
+  border-collapse: collapse;
+}
+
+td {
+  transition: background-color 0.5s ease-in-out;
+}
+
+td:hover {
+  background-color: rgb(86, 159, 159);
+}
+
+tr {
+  cursor: pointer;
+}
+
+.title:hover {
+  transform: translate(10px, 3px);
+  animation-name: cross;
+  animation-duration: 1s;
+}
+
+.pic1 {
+  transition: all 1s;
+}
+
+.pic1:hover {
+  transform: translate(10px, 10px) rotate(-5deg);
+}
+
+.pic2 {
+  transition: all 1s;
+}
+
+.pic2:hover {
+  transform: scale(1.25, 1.25);
+}
+
+@keyframes cross {
+  from {
+    color: azure;
+  }
+  to {
+    color: aquamarine;
+  }
+}
+
+.container {
+  background-color: black;
+}

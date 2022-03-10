@@ -1,0 +1,66 @@
+body {
+  background-image: url("./evie-s-eobySVu7nN4-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/*attribute selector*/
+input[type="text"] {
+  color: azure;
+}
+
+#email,
+#age,
+#area,
+#gender,
+#suggestion {
+  color: azure;
+}
+
+input[type="text"]:focus {
+  color: rgb(130, 189, 189);
+}
+
+*::selection {
+  color: rgb(39, 36, 85);
+  background-color: rgb(202, 173, 173);
+}
+
+h1,
+h2,
+h3,
+li,
+a,
+tr {
+  letter-spacing: 4px;
+  line-height: 2rem;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h3 {
+  color: beige;
+  padding: 0rem 8rem;
+}
+
+a,
+tr {
+  color: azure;
+  text-decoration: none;
+}
+
+img {
+  opacity: 0.7;
+  padding: 0rem 8rem;
+}
+td,
+tr,
+th {
+  border: 1px solid azure;
+}
+
+ul {
+  color: azure;
+  padding: 0rem 10rem;
+}
+h1.heading {
+  margin-top: 4rem;
+}

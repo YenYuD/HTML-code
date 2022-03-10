@@ -1,0 +1,24 @@
+.container {
+  border: 3px solid black;
+  background-color: black;
+  height: 300px;
+  display: flex;
+}
+
+.box1 {
+  background-color: beige;
+  flex: 1 1 100px;
+}
+.box2 {
+  background-color: rgb(116, 116, 105);
+  flex: 1 1 100px;
+}
+/* .box3 {
+  background-color: rgb(38, 38, 35);
+}
+.box4 {
+  background-color: rgb(179, 179, 135);
+}
+.box5 {
+  background-color: rgb(84, 84, 68);
+} */
